@@ -10,7 +10,8 @@
     "publish-please": "publish-please",
     "prepublish": "publish-please guard",
     "update": "updates --update && npm install",
-    "postupdate": "git diff-files --quiet package-lock.json || npm test"
+    "postupdate": "git diff-files --quiet package-lock.json || npm test",
+    "postinstall": "npx gulp"
   },
   "repository": {
     "type": "git",
@@ -41,7 +42,7 @@
     "bluebird": "3.5.5",
     "body-parser": "1.19.0",
     "chai": "4.2.0",
-    "cookie-parser": "1.4.4",
+    "cookie-parser": "1.4.5",
     "gulp": "4.0.2",
     "gulp-istanbul": "1.1.3",
     "gulp-mocha": "7.0.1",
